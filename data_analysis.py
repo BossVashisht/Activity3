@@ -52,7 +52,7 @@ def analyze_data(abData):
             print("Correlation Matrix:")
             corr_matrix = abData[numeric_cols].corr()
             plt.figure(figsize=(10, 8))
-            sns.heatmap(corr_matrix, annot=True, cmap='viridis', fmt=".2f")
+            sns.heatmap(corr_matrix, annot=True, cmap='plasma', fmt=".2f")
             plt.title('Correlation Matrix')
             plt.show()
         else:
